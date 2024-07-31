@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinball</title>
+
+    <style>
+        body {
+
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: burlywood;
+            width: 100%;
+            animation-name: changing;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+
+        ul {
+
+            border-bottom: 5px solid purple;
+            display: flex;
+            /* animation-name: upanddown;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite; */
+            list-style: none;
+        }
+
+        @keyframes changing {
+
+            0% {
+
+                background-color: blueviolet;
+            }
+
+            20% {
+
+                background-color: chartreuse;
+            }
+
+            40% {
+
+                background-color: crimson;
+            }
+
+            60% {
+
+                background-color: aqua;
+            }
+
+            80% {
+
+                background-color: darkslateblue;
+            }
+
+            100% {
+
+                background-color: blueviolet;
+            }
+        }
+
+        ul li:nth-child(1) {
+
+            animation-delay: .2s;
+        }
+
+        ul li:nth-child(2) {
+
+            animation-delay: .6s;
+        }
+
+        ul li:nth-child(3) {
+
+            animation-delay: 1s;
+        }
+
+        ul li:nth-child(4) {
+
+            animation-delay: 1.4s;
+        }
+
+        ul li:nth-child(5) {
+
+            animation-delay: 1.8s;
+        }
+
+        @keyframes upanddown {
+
+            0% {
+
+                transform: translateY(0px);
+            }
+
+            50% {
+
+                transform: translateY(-150px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+
+        }
+
+        li {
+
+            background-color: cornflowerblue;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 7px;
+            animation-name: upanddown;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</body>
+
+</html>
